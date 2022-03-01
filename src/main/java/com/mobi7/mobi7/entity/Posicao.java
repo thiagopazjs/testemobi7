@@ -1,5 +1,6 @@
 package com.mobi7.mobi7.entity;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,7 +13,8 @@ import java.util.Date;
 @Data
 @Builder
 @AllArgsConstructor
-public class Posicoes {
+
+public class Posicao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,7 +40,7 @@ public class Posicoes {
     private Boolean ignicao;
 
 
-    public Posicoes() {
+    public Posicao() {
 
     }
 }
