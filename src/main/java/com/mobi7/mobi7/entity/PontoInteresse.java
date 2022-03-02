@@ -28,12 +28,6 @@ public final class PontoInteresse {
     @Column(name = "longitude")
     private Double longitude;
 
-    public PontoInteresse(String nome, Integer raio, Double latitude, Double longitude) {
-        this.nome = nome;
-        this.raio = raio;
-        this.latitude = latitude;
-        this.longitude = longitude;
-    }
 
     public PontoInteresse() {
 
