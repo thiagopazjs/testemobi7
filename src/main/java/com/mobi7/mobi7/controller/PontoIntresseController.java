@@ -39,7 +39,6 @@ public class PontoIntresseController {
         List<PontoInteresse> pontosInteresse = new ArrayList<PontoInteresse>();
         pontosInteresse.add(pontoInteresse);
         pontosInteresse.add(pontoInteresse2);
-        pontosInteresse.add(pontoInteresse2);
 
         return new ResponseEntity(pontosInteresse, HttpStatus.OK);
 
