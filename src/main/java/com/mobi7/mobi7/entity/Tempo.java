@@ -6,10 +6,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDateTime;
+
 
 @Entity
 @Data
@@ -21,9 +20,12 @@ public class Tempo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long tempo;
+    private LocalDateTime tempo;
     private String placa;
     private String pontoInteresse;
+    private Double latitude;
+    private Double longitude;
+
 
 
     public String getPlaca() {
@@ -42,14 +44,21 @@ public class Tempo {
         this.pontoInteresse = pontoInteresse;
     }
 
-    public Long getTempo() {
+    public LocalDateTime getTempo(int i) {
         return tempo;
     }
 
-    public void setTempo(Long tempo) {
-        this.tempo = tempo;
+    public void setTempo(String tempo) {
+
+        this.tempo = LocalDateTime.now();
+    }
+
+
+    public void setTempo() {
     }
 }
+
+
 
 
 

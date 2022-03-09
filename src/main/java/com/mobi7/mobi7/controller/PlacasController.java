@@ -16,14 +16,16 @@ import java.util.List;
 @RequestMapping("/api/v1/placa")
 public class PlacasController {
 
-    @GetMapping(value = "/", produces = "application/json")
+    @GetMapping(value = "", produces = "application/json")
     public ResponseEntity<List<Placas>> init() throws ParseException {
 
         Placas placa = new Placas();
         placa.setId(1L);
         placa.setPlaca("TESTE001");
 
-        Placas placas2 = new Placas();
+
+        Placas placas2;
+        placas2 = new Placas();
         placas2.setId(2L);
         placas2.setPlaca("TESTE001");
 
@@ -31,7 +33,6 @@ public class PlacasController {
         List<Placas> placas = new ArrayList<Placas>();
         placas.add(placa);
         placas.add(placas2);
-
 
 
         return new ResponseEntity(placas, HttpStatus.OK);

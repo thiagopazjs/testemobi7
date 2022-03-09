@@ -36,8 +36,14 @@ public class Posicao {
     @Column(name = "ignicao")
     private Boolean ignicao;
 
+    @Column(name = "descricao")
+    private String descricao;
 
     public Posicao() {
 
+    }
+
+
+    public Posicao(String s, Date parse, int parseInt, double parseDouble, double parseDouble1, boolean parseBoolean) {
     }
 }

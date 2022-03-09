@@ -36,6 +36,7 @@ public class PontoIntresseController {
         pontoInteresse2.setLongitude(-51.480278);
 
 
+
         List<PontoInteresse> pontosInteresse = new ArrayList<PontoInteresse>();
         pontosInteresse.add(pontoInteresse);
         pontosInteresse.add(pontoInteresse2);
