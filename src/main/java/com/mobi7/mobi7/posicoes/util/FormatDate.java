@@ -4,6 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.OffsetDateTime;
 import java.util.Date;
 
 
@@ -11,8 +12,8 @@ import java.util.Date;
 public class FormatDate {
 
     private static final String LOCALE = "GMT -0200 (BRT)";
-    private static final LocalDate currentdate = LocalDate.now();
-    private static final LocalTime localTime = LocalTime.now();
+    private static final OffsetDateTime currentdate = OffsetDateTime.now();
+    //private static final LocalTime localTime = LocalTime.now();
 
     private FormatDate() {}
 
@@ -51,9 +52,9 @@ public class FormatDate {
     }
 
     private static String hours() {
-        int hours = localTime.getHour();
-        int minutes = localTime.getMinute();
-        int seconds = localTime.getSecond();
+        int hours = OffsetDateTime.MAX.getHour();
+        int minutes = OffsetDateTime.MAX.getMinute();
+        int seconds = OffsetDateTime.MAX.getSecond();
         return hours+":"+minutes+":"+seconds;
     }
 

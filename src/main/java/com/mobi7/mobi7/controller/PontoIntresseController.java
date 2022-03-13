@@ -28,6 +28,7 @@ public class PontoIntresseController {
         pontoInteresse.setLatitude(-25.56742701740896);
         pontoInteresse.setLongitude(-51.47653363645077);
 
+
         PontoInteresse pontoInteresse2 = new PontoInteresse();
         pontoInteresse2.setId(2L);
         pontoInteresse2.setNome("PONTO 2");

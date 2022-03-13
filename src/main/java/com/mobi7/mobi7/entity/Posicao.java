@@ -39,6 +39,9 @@ public class Posicao {
     @Column(name = "descricao")
     private String descricao;
 
+    @Column(name = "tempo")
+    private String tempo;
+
     public Posicao() {
 
     }
